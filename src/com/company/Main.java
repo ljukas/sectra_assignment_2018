@@ -22,8 +22,7 @@ public class Main {
         while (true) {
             String input[] = getUserInput(c);
             if (iv.isImageInput(input)) {
-                Image img = ImageFactory.createImage(input);
-                imgList.addImage(img);
+                imgList.addImage(ImageFactory.createImage(input));
             } else if (iv.isGroupInput(input)) {
                 // Remove the G.
                 String[] strStack = Arrays.copyOfRange(input, 1, input.length);
