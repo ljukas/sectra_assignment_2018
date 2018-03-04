@@ -18,7 +18,6 @@ public class BMP extends Image {
             comp += pySize;
         }
 
-        // Casting to int will always truncate as per instructions.
-        return (int)comp;
+        return comp;
     }
 }

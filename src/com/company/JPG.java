@@ -8,7 +8,6 @@ public class JPG extends Image {
         this.setCompressedSize(compressedSize());
     }
 
-
     @Override
     public int compressedSize() {
         int comp = this.getSizeX() * this.getSizeY() / 5;
@@ -19,7 +18,6 @@ public class JPG extends Image {
            comp += pySize;
         }
 
-        // Casting to int will always truncate as per instructions.
         return comp;
     }
 }

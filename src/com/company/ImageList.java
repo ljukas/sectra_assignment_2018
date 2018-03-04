@@ -1,6 +1,5 @@
 package com.company;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class ImageList {
@@ -40,7 +39,6 @@ public class ImageList {
                totalSize += img.compressedSize();
             }
         }
-        System.out.println("Ungrouped size: " + totalSize);
         // Calculate the final compressed size of each stack and add it to the total.
         for (ArrayList<Integer> stack : stacks) {
            totalSize += stackSize(stack);

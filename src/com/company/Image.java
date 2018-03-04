@@ -50,10 +50,6 @@ public abstract class Image {
        this.compressedSize  = compressedSize;
     }
 
-    int getCompressedSize() {
-        return compressedSize;
-    }
-
     boolean isGrouped() {
         return grouped;
     }
